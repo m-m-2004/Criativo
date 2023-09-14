@@ -1534,6 +1534,10 @@ section .heading h1 span {
   padding: 80px 0;
   height: 94vh;
   background-color: #0c0c0c;
+   background-image: url(https://media.giphy.com/media/l5JbspfwZ0yjHjlJ0K/giphy.gif);
+   background-size:100%;
+   background-repeat: no-repeat; 
+   
 }
 .Contac .container {
   display: flex;
