@@ -608,6 +608,7 @@ section .heading h1 span {
 @media (max-width: 710px) {
   .about {
     background-size: 20%;
+    height: fit-content;
   }
   .about .container .heading h1 {
     font-size: 20px;
@@ -616,6 +617,7 @@ section .heading h1 span {
     font-size: 18px;
   }
 }
+
 /* end about */
 /* start information */
 .information {
@@ -1528,6 +1530,14 @@ section .heading h1 span {
     font-size: 30px;
   }
 }
+@media (max-width: 300px) {
+  .blog .cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .blog .cards > div {
+    padding: 10px;
+  }
+}
 /* end blog */
 /* start Contac*/
 .Contac {
@@ -1788,11 +1798,31 @@ footer .container > p {
   margin-top: 100px;
 }
 @media (max-width: 520px) {
+  footer {
+    height: fit-content;
+    padding-bottom: 20px;
+  }
   footer .container div ul {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     gap: 20px;
+  }
+  footer .container div ul li a {
+    font-size: 10px;
+  }
+  footer .container > p {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  footer .container .logo span:first-child {
+    font-size: 30px;
+  }
+  footer .container > div > p:first-of-type {
+    font-size: 11px;
+  }
+  footer .container > div .social i {
+    font-size: 15px;
   }
 }
 /* end footer */
